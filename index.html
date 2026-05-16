@@ -2,15 +2,79 @@
 <html>
 <head lang="uk">
     <meta charset="UTF-8">
-    <title>My Page</title>
-
-
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Buy list</title>
     <link rel="stylesheet" type="text/css" href="main.css" />
 </head>
 <body>
-	<span class="product-item">
-		Apple
-		<span class="amount">4</span>
-	</span>
+	<div class="container">
+		<main class="left-part">
+			<div class="new-product-form">
+				<input type="text" class="add-input" placeholder="Назва товару">
+				<button class="add-button">Додати</button>
+			</div>
+			<hr/>
+			<div class="products">
+				<div class="product-name done">Помідори</div>
+				<div class="product-controlers">
+					<span class="quantity-label">2</span>
+				</div>
+				<div class="product-status">
+					<button class="button-bought inactive" disabled>Не куплено</button>
+				</div>
+			</div>
+			<hr/>
+			<div class="products">
+				<div class="product-name">Печиво</div>
+				<div class="product-controlers">
+					<button class="button-minus" aria-label="Зменшити">-</button>
+					<span class="quantity-label">2</span>
+					<button class="button-plus" aria-label="Збільшити">+</button>
+				</div>
+				<div class="product-status">
+					<button class="button-bought" >Куплено</button>
+					<button class="button-delete" aria-label="Видалити">×</button>
+				</div>
+			</div>
+			<hr/>
+			<div class="products">
+				<div class="product-name">
+					<input type="text" class="edit-input" value="Сир">
+				</div>
+				<div class="product-controlers">
+					<button class="button-minus" aria-label="Зменшити">-</button>
+					<span class="quantity-label">1</span>
+					<button class="button-plus" aria-label="Збільшити">+</button>
+				</div>
+				<div class="product-status">
+					<button class="button-bought" >Куплено</button>
+					<button class="button-delete" aria-label="Видалити">×</button>
+				</div>
+			</div>
+		</main>
+		<aside class="right-part">
+			<div class="summary">
+				<h2>Залишилося</h2>
+				<hr/>
+				<span class="product-item">Печиво
+				<span class="amount">2</span>
+				</span>
+				<span class="product-item">Сир
+				<span class="amount">1</span>
+				</span>
+				<hr/>
+				<h2>Куплено</h2>
+				<hr/>
+				<div class="badge-container">
+				<span class="product-item done">Помідори
+				<span class="amount done">2</span>
+				</span>
+				</div>
+			</div>
+		</aside>
+	</div>
+	<div class="badge">
+		<div class="badge-title">Buy List</div>
+	</div>
 </body>
 </html>

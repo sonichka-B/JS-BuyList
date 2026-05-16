@@ -1,17 +1,229 @@
-.product-item {
-	background-color: gray;
-	display: inline-block;
-	height: 25px;
-	padding: 5px;
-	border-radius: 5px;
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
 }
 
+body{
+	background-color: darkgray;
+	padding: 40px;
+	text-align: center;
+}
+.container {
+	display: inline-block;
+	text-align: left;
+	width: 100%;
+	max-width: 900px;
+	font-size: 0;
+}
+.left-part, .right-part{
+	background-color: white;
+	border-radius: 4px;
+	font-size: 16px;
+	display: inline-block;
+	vertical-align: top;
+}
+.left-part{
+	width: 65%;
+	margin-right: 3%;
+}
+.right-part{
+	width: 32%;
+}
+
+.new-product-form{
+	display: block;
+	padding: 20px;
+	font-size: 0;
+}
+
+.add-input{
+	display: inline-block;
+	width: 80%;
+	padding: 10px;
+	font-size: 16px;
+	border: 1px solid #ccc;
+	border-right: none;
+	border-radius: 4px 0 0 4px;
+	outline: none;
+	color: #666;
+	vertical-align: middle;
+}
+.add-button{
+	display: inline-block;
+	width: 20%;
+	background-color: #3232fd;
+	color: white;
+	border: none;
+	font-size: 16px;
+	text-align: center;
+	cursor: pointer;
+	vertical-align: middle;
+	padding: 10px 0;
+}
+.products{
+	display: block;
+	padding: 15px;
+	font-size: 0;
+}
+.product-name{
+	display: inline-block;
+	width: 40%;
+	font-size: 16px;
+	color: #000000;
+	vertical-align: middle;
+}
+.done{
+	text-decoration: line-through;
+}
+.product-controlers{
+	display: inline-block;
+	width: 30%;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 16px;
+}
+.product-status{
+	display: inline-block;
+	width: 30%;
+	text-align: right;
+	vertical-align: middle;
+	font-size: 16px;
+}
+.quantity-label{
+	display: inline-block;
+	background-color: #e0e0e0;
+	padding: 4px 10px;
+	margin: 0 5px;
+	border-radius: 4px;
+	font-weight: bold;
+	font-size: 14px;
+	vertical-align: middle;
+}
+.edit-input{
+	display: inline-block;
+	font-size: 14px;
+	padding: 5px 10px;
+	border: 1px solid #2185d0;
+	border-radius: 4px;
+	outline: none;
+	width: 80%;
+}
+.button-minus, .button-plus{
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	border: none;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+	cursor: pointer;
+	text-align: center;
+	line-height: 32px;
+	vertical-align: middle;
+}
+.button-plus{
+	background-color: #21ba45;
+}
+.button-minus{
+	background-color: #db2828;
+}
+.button-minus.disabled {
+	background-color: #d54b4b; cursor: default;
+}
+.button-delete{
+	display: inline-block;
+	background-color: #db2828;
+	color: white;
+	border: none;
+	font-size: 16px;
+	border-radius: 4px;
+	width: 30px;
+	height: 30px;
+	font-weight: bold;
+	cursor: pointer;
+	text-align: center;
+	line-height: 30px;
+	vertical-align: middle;
+}
+.button-bought{
+	display: inline-block;
+	background-color: #d5cfcf;
+	color: #333333;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	padding: 6px;
+	margin-right: 5px;
+	font-size: 12px;
+	font-weight: bold;
+	cursor: pointer;
+	vertical-align: middle;
+}
+.button-bought.inactive{
+	background-color: #d5cfcf;
+	color: #333333;
+}
+.product-item {
+	background-color: gray;
+	color: #f4f2f2;
+	display: inline-block;
+	height: 30px;
+	padding: 0 8px 0 12px;
+	border-radius: 5px;
+	font-size: 14px;
+	line-height: 30px;
+	vertical-align: middle;
+	margin-right: 8px;
+	margin-bottom: 8px;
+}
 .amount {
-	background-color: yellow;
+	background-color: #dd7824;
 	border-radius: 10px;
-	
 	display: inline-block;
 	height: 20px;
 	width: 20px;
 	text-align: center;
+	color: white;
+	line-height: 22px;
+	margin-left: 5px;
+	vertical-align: middle;
+	font-size: 12px;
 }
+.summary {
+	display: block;
+	padding: 20px;
+}
+.summary h2 {
+	display: block;
+	font-size: 20px;
+	margin-bottom: 15px;
+	padding-bottom: 10px;
+	color: #111;
+}
+.badge-container {
+	display: block;
+	margin-bottom: 10px;
+}
+hr{
+	border: none;
+	height: 1px;
+	margin: 15px 0;
+	background-color: #111111;
+}
+.badge{
+	position: fixed;
+	bottom: 0;
+	left: 20px;
+	background-color: #7054e6; /* Яскраво-фіолетовий (початковий) */
+	color: white;
+	text-align: center;
+	padding: 10px 20px 15px 20px;
+	border-radius: 10px 10px 0 0;
+}
+.badge-title {
+	font-size: 22px;
+	font-weight: bold;
+}
+
