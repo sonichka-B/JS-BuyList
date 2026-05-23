@@ -11,7 +11,7 @@
 		<main class="left-part">
 			<div class="new-product-form">
 				<input type="text" class="add-input" placeholder="Назва товару">
-				<button class="add-button">Додати</button>
+				<button class="add-button" data-tooltip="додати новий товар">Додати</button>
 			</div>
 			<hr/>
 			<div class="products">
@@ -20,20 +20,20 @@
 					<span class="quantity-label">2</span>
 				</div>
 				<div class="product-status">
-					<button class="button-bought inactive" disabled>Не куплено</button>
+					<button class="button-bought inactive" disabled data-tooltip="товар ще не купили">Не куплено</button>
 				</div>
 			</div>
 			<hr/>
 			<div class="products">
 				<div class="product-name">Печиво</div>
 				<div class="product-controlers">
-					<button class="button-minus" aria-label="Зменшити">-</button>
+					<button class="button-minus" aria-label="Зменшити" data-tooltip="зменшити кількість">-</button>
 					<span class="quantity-label">2</span>
-					<button class="button-plus" aria-label="Збільшити">+</button>
+					<button class="button-plus" aria-label="Збільшити" data-tooltip="збільшити кількість">+</button>
 				</div>
 				<div class="product-status">
-					<button class="button-bought" >Куплено</button>
-					<button class="button-delete" aria-label="Видалити">×</button>
+					<button class="button-bought" data-tooltip="товар вже купили">Куплено</button>
+					<button class="button-delete" aria-label="Видалити" data-tooltip="видалити товар зі списку">×</button>
 				</div>
 			</div>
 			<hr/>
@@ -42,13 +42,13 @@
 					<input type="text" class="edit-input" value="Сир">
 				</div>
 				<div class="product-controlers">
-					<button class="button-minus" aria-label="Зменшити">-</button>
+					<button class="button-minus" aria-label="Зменшити" data-tooltip="зменшити кількість">-</button>
 					<span class="quantity-label">1</span>
-					<button class="button-plus" aria-label="Збільшити">+</button>
+					<button class="button-plus" aria-label="Збільшити" data-tooltip="збільшити кількість">+</button>
 				</div>
 				<div class="product-status">
-					<button class="button-bought" >Куплено</button>
-					<button class="button-delete" aria-label="Видалити">×</button>
+					<button class="button-bought" data-tooltip="товар вже купили">Куплено</button>
+					<button class="button-delete" aria-label="Видалити" data-tooltip="видалити товар зі списку">×</button>
 				</div>
 			</div>
 		</main>
@@ -75,6 +75,7 @@
 	</div>
 	<div class="badge">
 		<div class="badge-title">Buy List</div>
+		<div class="badge-myName">Created by:<br> Bordachenko Sofiia</div>
 	</div>
 </body>
 </html>
