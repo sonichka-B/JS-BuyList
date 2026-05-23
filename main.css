@@ -131,7 +131,7 @@ body{
 	background-color: #db2828;
 }
 .button-minus.disabled {
-	background-color: #d54b4b; cursor: default;
+	background-color: #ed7878; cursor: default;
 }
 .button-delete{
 	display: inline-block;

@@ -13,14 +13,18 @@
 				<input type="text" class="add-input" placeholder="Назва товару">
 				<button class="add-button" data-tooltip="додати новий товар">Додати</button>
 			</div>
+			<div class="list">
 			<hr/>
 			<div class="products">
-				<div class="product-name done">Помідори</div>
+				<div class="product-name">Помідори</div>
 				<div class="product-controlers">
+					<button class="button-minus" aria-label="Зменшити" data-tooltip="зменшити кількість">-</button>
 					<span class="quantity-label">2</span>
+					<button class="button-plus" aria-label="Збільшити" data-tooltip="збільшити кількість">+</button>
 				</div>
 				<div class="product-status">
-					<button class="button-bought inactive" disabled data-tooltip="товар ще не купили">Не куплено</button>
+					<button class="button-bought" data-tooltip="товар вже купили">Куплено</button>
+					<button class="button-delete" aria-label="Видалити" data-tooltip="видалити товар зі списку">×</button>
 				</div>
 			</div>
 			<hr/>
@@ -38,11 +42,9 @@
 			</div>
 			<hr/>
 			<div class="products">
-				<div class="product-name">
-					<input type="text" class="edit-input" value="Сир">
-				</div>
+				<div class="product-name">Сир</div>
 				<div class="product-controlers">
-					<button class="button-minus" aria-label="Зменшити" data-tooltip="зменшити кількість">-</button>
+					<button class="button-minus disabled" aria-label="Зменшити" data-tooltip="зменшити кількість">-</button>
 					<span class="quantity-label">1</span>
 					<button class="button-plus" aria-label="Збільшити" data-tooltip="збільшити кількість">+</button>
 				</div>
@@ -51,31 +53,14 @@
 					<button class="button-delete" aria-label="Видалити" data-tooltip="видалити товар зі списку">×</button>
 				</div>
 			</div>
-		</main>
-		<aside class="right-part">
-			<div class="summary">
-				<h2>Залишилося</h2>
-				<hr/>
-				<span class="product-item">Печиво
-				<span class="amount">2</span>
-				</span>
-				<span class="product-item">Сир
-				<span class="amount">1</span>
-				</span>
-				<hr/>
-				<h2>Куплено</h2>
-				<hr/>
-				<div class="badge-container">
-				<span class="product-item done">Помідори
-				<span class="amount done">2</span>
-				</span>
-				</div>
 			</div>
-		</aside>
+		</main>
+		<aside class="right-part"></aside>
 	</div>
 	<div class="badge">
 		<div class="badge-title">Buy List</div>
 		<div class="badge-myName">Created by:<br> Bordachenko Sofiia</div>
 	</div>
+	<script src="jsFile.js"></script>
 </body>
 </html>
